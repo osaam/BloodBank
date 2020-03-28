@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:paddingTop="30dp">
+
+
+
+    <EditText
+        android:id="@+id/et_name_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint="  Name"
+        android:layout_alignParentTop="true"
+
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+
+        />
+    <EditText
+        android:id="@+id/et_mail_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" E-mail"
+        android:layout_below="@id/et_name_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_email_black2_24dp"
+
+
+        />
+    <EditText
+        android:id="@+id/et_birth_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" Date of birth"
+        android:layout_below="@id/et_mail_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_event_black_24dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_blood_type_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" Blood Type"
+        android:layout_below="@id/et_birth_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingStart="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="16dp">
+
+            <Spinner
+                android:id="@+id/sp_blood_type_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/img_blood_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_blood_type_black_24dp" />
+            <ImageView
+                android:id="@+id/img_arrow_down_blood_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward"/>
+
+        </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/et_last_donation_date_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" Last donation date"
+        android:layout_below="@id/et_blood_type_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_event_black_24dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_government_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" Gonernment"
+        android:layout_below="@id/et_last_donation_date_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_home_24dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp">
+
+            <Spinner
+        android:id="@+id/sp_governmen_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/img_home_govern_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_home_24dp" />
+            <ImageView
+                android:id="@+id/img_arrow_down_govern_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward"/>
+</RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_city_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" City"
+        android:layout_below="@id/et_government_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_home_24dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp">
+
+
+    <Spinner
+        android:id="@+id/sp_city_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@null" />
+            <ImageView
+                android:id="@+id/img_home_city_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_home_24dp" />
+            <ImageView
+                android:id="@+id/img_arrow_down_city_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward"/>
+
+        </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/et_phone_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" phone"
+        android:layout_below="@id/et_city_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_phone_24dp"
+        />
+    <EditText
+        android:id="@+id/et_pass_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" password"
+        android:layout_below="@id/et_phone_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_lock_24dp"
+        />
+    <EditText
+        android:id="@+id/et_confirm_pass_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray"
+        android:hint=" Confirm password"
+        android:layout_below="@id/et_pass_new_account"
+        android:layout_margin="10dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_lock_24dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn_confirm"
+        android:layout_height="30dp"
+        android:text="confirm "
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:textColor="#ffff"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#9A0B0B"
+        />
+    </RelativeLayout>

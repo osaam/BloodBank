@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover">
+
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/logo_white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_code_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle"
+        android:hint="code confirm"
+        android:layout_below="@id/image_logo"
+        android:layout_margin="5dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="15dp"
+
+        />
+    <EditText
+        android:id="@+id/et_new_pass_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle"
+        android:hint="new password"
+        android:layout_below="@id/et_code_confirm"
+        android:layout_margin="5dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="15dp"
+
+        />
+    <EditText
+        android:id="@+id/et_new_pass_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle"
+        android:hint="confirm new password"
+        android:layout_below="@id/et_new_pass_1"
+        android:layout_margin="5dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="15dp"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn_confirm"
+        android:layout_height="50dp"
+        android:text="confirm "
+        android:layout_below="@id/et_new_pass_2"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:textColor="#9A0B0B"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+    </RelativeLayout>

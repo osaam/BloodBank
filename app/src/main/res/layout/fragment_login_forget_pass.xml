@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover">
+
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/logo_white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_phone_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/circle"
+        android:hint="phone"
+        android:layout_below="@id/image_logo"
+        android:layout_margin="5dp"
+        android:textColorHint="#9A0B0B"
+        android:paddingLeft="5dp"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn_confirm"
+        android:layout_height="30dp"
+        android:text="confirm "
+        android:layout_below="@id/et_phone_2"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:textColor="#9A0B0B"
+        android:layout_marginTop="20dp"
+        />
+    </RelativeLayout>

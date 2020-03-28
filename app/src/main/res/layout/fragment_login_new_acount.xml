@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_creat_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text=" creat new account"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/et_name_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/txt_creat_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:hint="  Name"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B"
+
+        />
+
+    <EditText
+        android:id="@+id/et_mail_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_name_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_email_black2_24dp"
+        android:hint=" E-mail"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B"
+
+
+        />
+
+    <EditText
+        android:id="@+id/et_birth_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_mail_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_event_black_24dp"
+        android:hint=" Date of birth"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_blood_type_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_birth_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:hint=" Blood Type"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:paddingStart="2dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp">
+
+            <Spinner
+                android:id="@+id/sp_blood_type_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:spinnerMode="dropdown"
+                android:gravity="center_horizontal"
+                android:paddingStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_blood_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_blood_type_black_24dp" />
+
+            <ImageView
+                android:id="@+id/img_arrow_down_blood_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward" />
+
+        </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/et_last_donation_date_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_blood_type_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_event_black_24dp"
+        android:hint=" Last donation date"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_government_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_last_donation_date_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_home_24dp"
+        android:hint=" Gonernment"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp">
+
+            <Spinner
+                android:id="@+id/sp_governmen_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:spinnerMode="dropdown"
+                android:gravity="center_horizontal"
+                android:paddingStart="20dp" />
+
+            <ImageView
+                android:id="@+id/img_home_govern_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_home_24dp" />
+
+            <ImageView
+                android:id="@+id/img_arrow_down_govern_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward" />
+        </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_city_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_government_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_home_24dp"
+        android:hint=" City"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp">
+
+
+            <Spinner
+                android:id="@+id/sp_city_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:spinnerMode="dropdown"
+                android:gravity="center_horizontal"
+                android:paddingStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_home_city_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_home_24dp" />
+
+            <ImageView
+                android:id="@+id/img_arrow_down_city_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_downward" />
+
+        </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/et_phone_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_city_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_phone_24dp"
+        android:hint=" phone"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B" />
+
+    <EditText
+        android:id="@+id/et_pass_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_phone_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_lock_24dp"
+        android:hint=" password"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B" />
+
+    <EditText
+        android:id="@+id/et_confirm_pass_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_pass_new_account"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@drawable/ic_lock_24dp"
+        android:hint=" Confirm password"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9A0B0B" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/btn_background"
+        android:text="confirm "
+        android:textColor="#9A0B0B" />
+</RelativeLayout>

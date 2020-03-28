@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_article"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/img_article"
+    android:background="@drawable/circle_top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_article"
+        >
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tx_titel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C43A3A"
+                android:text="Ways of disease preventi"
+                android:textColor="#201F1F"
+                android:textSize="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/img2_article"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@id/tx_titel"
+            android:layout_marginStart="-53dp"
+            android:background="@drawable/ic_favorite_fill_24dp" />
+
+        <TextView
+                android:id="@+id/tx_article"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tx_titel"
+                android:backgroundTint="#C43A3A"
+                android:text="Ways of disease prevention"
+                android:textColor="#B43A3A"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                />
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

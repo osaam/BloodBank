@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/circle_gray"
+                android:layout_marginEnd="20dp">
+
+                <Spinner
+                    android:id="@+id/sp_blood_type_donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:id="@+id/img_arrow_down_blood_donation"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_arrow_downward"
+                    android:layout_marginEnd="25dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/circle_gray"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/sp_blood_type_donation_govern"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:background="@null"/>
+
+
+                <ImageView
+                    android:id="@+id/img_arrow_down_donation_govern"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_arrow_downward"
+                    android:layout_marginEnd="25dp"/>
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_donation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear1"
+        tools:listitem="@layout/recycler_donation_item">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/fragment_home_btn_donation_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/full_circle_pluse" />
+
+</RelativeLayout>

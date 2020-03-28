@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.folder.BaseFragment">
+
+
+    <TextView
+        android:id="@+id/fragment_more_txt_more"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="More"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorSliderSelected"
+        android:textSize="35sp"
+        android:paddingTop="10dp"
+        android:background="#F7F2F2"
+
+
+        />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/fragment_more_txt_more"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSliderSelected"
+        />
+
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_fav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_marginTop="70dp"
+        >
+
+        <TextView
+            android:id="@+id/fragment_more_txt_fav"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="Favourite"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_fav"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_favorite_fill_24dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_fav"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSliderSelected"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_contact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_below="@+id/fragment_more_relatev_fav">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_contact"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="CONTACT WHIT US"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_contact"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_contact"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_message"
+             />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_contact"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSliderSelected"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_about"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_below="@+id/fragment_more_relatev_contact">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_about"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="ABOUT APP"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_about"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_about"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_idea_24dp"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_about"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSliderSelected"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_rate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_below="@+id/fragment_more_relatev_about">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_rate"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="RATE THIS APP"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_rate"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_rate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_star"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_rate"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSliderSelected"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_notify"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_below="@+id/fragment_more_relatev_rate">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_notify"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="NOTIFICATION SETTINGS"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_notify"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_notify"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_settings"
+            />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/fragment_more_txt_notify"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSliderSelected"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_more_relatev_out"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F2F2"
+        android:layout_below="@+id/fragment_more_relatev_notify">
+
+        <TextView
+            android:id="@+id/fragment_more_txt_out"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:text="LOG-OUT"
+            android:textColor="@color/colorSliderSelected"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/fragment_more_img_out"/>
+
+        <ImageView
+            android:id="@+id/fragment_more_img_out"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_lock_24dp"
+            />
+
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

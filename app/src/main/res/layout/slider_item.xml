@@ -19,6 +19,5 @@
         android:layout_marginBottom="60dp"
         android:text=""
         android:textSize="25dp"
-
         />
 </LinearLayout>
